@@ -43,7 +43,7 @@ public class UniqeLineConstraint implements Constraint {
                 }
             }
 
-            /*Variable[][] variablesTrans = new Variable[variables.length][variables.length];
+            Variable[][] variablesTrans = new Variable[variables.length][variables.length];
             for ( int i = 0; i<variables.length; i++ ) {
                 for ( int j = 0; j<variables.length; j++ ){
                     variablesTrans[i][j] = variables[j][i];
@@ -51,18 +51,14 @@ public class UniqeLineConstraint implements Constraint {
             }
 
             for (int i1 = 0, variablesTransLength = variablesTrans.length; i1 < variablesTransLength; i1++) {
-                if (i1!=x) {
+                if (i1!=x || true) {
                     Variable[] varRow = variablesTrans[i1];
                     if (isFullLine(varRow, assignment)) {
-                        boolean isTheSame = true;
-                        for (int i = 0; i < varRow.length; i++) {
-                            if (!variables[x][i].equals(varRow[i]))
-                                isTheSame = false;
-                        }
-                        return isTheSame;
+                        if (areLinesEqual(varRow, variables[x], assignment))
+                            return false;
                     }
                 }
-            }*/
+            }
         }
 
         Variable[] varColumn = new Variable[variables.length];
@@ -70,19 +66,15 @@ public class UniqeLineConstraint implements Constraint {
             varColumn[i] = variables[i][y];
         }
         if ( isFullLine(varColumn, assignment) ) {
-                /*for (int i1 = 0, variablesLength = variables.length; i1 < variablesLength; i1++) {
-                    if (i1!=y) {
+                for (int i1 = 0, variablesLength = variables.length; i1 < variablesLength; i1++) {
+                    if (i1!=y || true) {
                         Variable[] varRow2 = variables[i1];
                         if (isFullLine(varRow2, assignment)) {
-                            boolean isTheSame = true;
-                            for (int i = 0; i < varRow2.length; i++) {
-                                if (!varColumn[i].equals(varRow2[i]))
-                                    isTheSame = false;
-                            }
-                            return isTheSame;
+                            if (areLinesEqual(varRow2, varColumn, assignment))
+                                return false;
                         }
                     }
-                }*/
+                }
 
             Variable[][] variablesTrans = new Variable[variables.length][variables.length];
             for ( int i = 0; i<variables.length; i++ ) {
