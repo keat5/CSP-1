@@ -16,7 +16,7 @@ import java.util.Arrays;
  * @author Mike Stampone
  */
 public class MapCSP extends CSP {
-    int sizeBinary = 6;
+    int sizeBinary = 10;
     Variable[][] tab = new Variable[sizeBinary][sizeBinary];
     public static final Variable NSW = new Variable("NSW");
     public static final Variable NT = new Variable("NT");

@@ -18,10 +18,11 @@ public class UniqeLineConstraint implements Constraint {
         this.x = x;
         this.y = y;
         scope = new ArrayList<>(vars.length*vars.length);
-        for (Variable[] vs: vars)
+        scope.add(variables[x][y]);
+        /*for (Variable[] vs: vars)
             for ( Variable v: vs ){
                 scope.add(v);
-            }
+            }*/
     }
 
     @Override

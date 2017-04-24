@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="982bd75a-c4cd-49e5-9b8a-14b0ffe1867e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/chapter6-src/fr/emse/ai/csp/core/Main$1.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chapter6-src/fr/emse/ai/csp/core/Assignment.class" afterPath="$PROJECT_DIR$/out/production/chapter6-src/fr/emse/ai/csp/core/Assignment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/chapter6-src/fr/emse/ai/csp/core/Main.class" afterPath="$PROJECT_DIR$/out/production/chapter6-src/fr/emse/ai/csp/core/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fr/emse/ai/csp/core/Assignment.java" afterPath="$PROJECT_DIR$/src/fr/emse/ai/csp/core/Assignment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fr/emse/ai/csp/australia/MapCSP.java" afterPath="$PROJECT_DIR$/src/fr/emse/ai/csp/australia/MapCSP.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fr/emse/ai/csp/core/Main.java" afterPath="$PROJECT_DIR$/src/fr/emse/ai/csp/core/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fr/emse/ai/csp/core/UniqeLineConstraint.java" afterPath="$PROJECT_DIR$/src/fr/emse/ai/csp/core/UniqeLineConstraint.java" />
     </list>
     <ignored path="chapter6-src.iws" />
@@ -27,11 +31,11 @@
     <splitter split-orientation="vertical" split-proportion="0.8832237">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="MapCSP.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="MapCSP.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/australia/MapCSP.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-204">
-                  <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+                <state relative-caret-position="102">
+                  <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -42,8 +46,8 @@
           <file leaf-file-name="EqualValuesNumberInRowConstraint.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/EqualValuesNumberInRowConstraint.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="561">
-                  <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+                <state relative-caret-position="136">
+                  <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#638#639#0" expanded="true" />
@@ -56,23 +60,13 @@
           <file leaf-file-name="UniqeLineConstraint.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/UniqeLineConstraint.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="69" column="40" lean-forward="true" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+                <state relative-caret-position="238">
+                  <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#644#645#0" expanded="true" />
-                    <element signature="e#672#673#0" expanded="true" />
+                    <element signature="e#684#685#0" expanded="true" />
+                    <element signature="e#712#713#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Stream.java" pinned="false" current-in-tab="false">
-            <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/stream/Stream.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="372">
-                  <caret line="168" column="14" lean-forward="false" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -91,6 +85,18 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="UniqueLineConstraint.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/UniqueLineConstraint.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-45">
+                  <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="BacktrackingStrategy.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/BacktrackingStrategy.java">
               <provider selected="true" editor-type-id="text-editor">
@@ -104,30 +110,30 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Variable.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/Variable.java">
+          <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="200">
-                  <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+                <state relative-caret-position="204">
+                  <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="22" selection-end-column="13" />
                   <folding>
-                    <element signature="e#633#634#0" expanded="true" />
-                    <element signature="e#671#672#0" expanded="true" />
+                    <marker date="1493068294303" expanded="false" signature="584:603" ph=" { " />
+                    <marker date="1493068294303" expanded="false" signature="646:660" ph=" }" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/Main.java">
+          <file leaf-file-name="CSPStateListener.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/CSPStateListener.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+                <state relative-caret-position="136">
+                  <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Assignment.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Assignment.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/Assignment.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="125">
@@ -156,12 +162,24 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="NotEqualConstraint.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="NotEqualConstraint.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/NotEqualConstraint.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="-49">
                   <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="33" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ThreeInLineConstraint.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/ThreeInLineConstraint.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="9">
+                  <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -188,15 +206,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/fr/emse/ai/csp/core/Main.java" />
         <option value="$PROJECT_DIR$/src/fr/emse/ai/csp/core/UniqueLineConstraint.java" />
         <option value="$PROJECT_DIR$/src/fr/emse/ai/csp/core/EqualValuesNumberConstraint.java" />
         <option value="$PROJECT_DIR$/src/fr/emse/ai/csp/core/ThreeInLineConstraint.java" />
         <option value="$PROJECT_DIR$/src/fr/emse/ai/csp/core/EqualValuesNumberInColumnConstraint.java" />
-        <option value="$PROJECT_DIR$/src/fr/emse/ai/csp/core/EqualValuesNumberInRowConstraint.java" />
-        <option value="$PROJECT_DIR$/src/fr/emse/ai/csp/core/UniqeLineConstraint.java" />
-        <option value="$PROJECT_DIR$/src/fr/emse/ai/csp/australia/MapCSP.java" />
         <option value="$PROJECT_DIR$/src/fr/emse/ai/csp/core/Assignment.java" />
+        <option value="$PROJECT_DIR$/src/fr/emse/ai/csp/core/Main.java" />
+        <option value="$PROJECT_DIR$/src/fr/emse/ai/csp/core/UniqeLineConstraint.java" />
+        <option value="$PROJECT_DIR$/src/fr/emse/ai/csp/core/EqualValuesNumberInRowConstraint.java" />
+        <option value="$PROJECT_DIR$/src/fr/emse/ai/csp/australia/MapCSP.java" />
       </list>
     </option>
   </component>
@@ -779,7 +797,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1493039919916</updated>
-      <workItem from="1493042708437" duration="15354000" />
+      <workItem from="1493042708437" duration="18971000" />
     </task>
     <task id="LOCAL-00001" summary="Added EqualValuesNumberConstraint classes">
       <created>1493049667928</created>
@@ -795,11 +813,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493065203864</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated uniqe line constraint&#10;Works for n &gt;= 6">
+      <created>1493066256547</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1493066256547</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15354000" />
+    <option name="totallyTimeSpent" value="18971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1040" extended-state="0" />
@@ -921,10 +946,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1002,14 +1024,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/CSPStateListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/Domain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1034,28 +1048,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/UniqueLineConstraint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/ThreeInLineConstraint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#675#676#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/Variable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1075,14 +1067,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/NotEqualConstraint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
-          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/CSP.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1090,14 +1074,6 @@
           <folding>
             <element signature="e#3358#3359#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1112,14 +1088,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/EqualValuesNumberInRowConstraint.java">
+    <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/Assignment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+        <state relative-caret-position="125">
+          <caret line="109" column="49" lean-forward="false" selection-start-line="109" selection-start-column="49" selection-end-line="109" selection-end-column="49" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/CSPStateListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <marker date="1493068294303" expanded="false" signature="584:603" ph=" { " />
+            <marker date="1493068294303" expanded="false" signature="646:660" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -1136,35 +1130,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/UniqeLineConstraint.java">
+    <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/NotEqualConstraint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="69" column="40" lean-forward="true" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+        <state relative-caret-position="-49">
+          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/ThreeInLineConstraint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#644#645#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/UniqueLineConstraint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/UniqeLineConstraint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/EqualValuesNumberInRowConstraint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/australia/MapCSP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        <state relative-caret-position="102">
+          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/emse/ai/csp/core/Assignment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="109" column="49" lean-forward="false" selection-start-line="109" selection-start-column="49" selection-end-line="109" selection-end-column="49" />
-          <folding>
-            <element signature="e#850#851#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
           </folding>
         </state>
       </provider>

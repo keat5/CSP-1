@@ -10,7 +10,7 @@ public class Main {
 
         MapCSP map = new MapCSP();
         BacktrackingStrategy bts = new BacktrackingStrategy();
-        bts.addCSPStateListener(new CSPStateListener() {
+      /*  bts.addCSPStateListener(new CSPStateListener() {
             @Override
             public void stateChanged(Assignment assignment, CSP csp) {
                 System.out.println("Assignment evolved : " + assignment);
@@ -20,7 +20,7 @@ public class Main {
             public void stateChanged(CSP csp) {
                 System.out.println("CSP evolved : " + csp);
             }
-        });
+        });*/
         double start = System.currentTimeMillis();
         Assignment sol = bts.solve(map);
         double end = System.currentTimeMillis();
