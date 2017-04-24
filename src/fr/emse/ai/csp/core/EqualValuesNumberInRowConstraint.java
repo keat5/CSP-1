@@ -1,5 +1,6 @@
 package fr.emse.ai.csp.core;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -14,6 +15,7 @@ public class EqualValuesNumberInRowConstraint implements Constraint {
 
     public EqualValuesNumberInRowConstraint(Variable[][] vars, int row) {
         this.variables = vars[row];
+        scope=new ArrayList<Variable>(vars.length);
         for(int i = 0; i < variables.length; i++) {
             scope.add(variables[i]);
         }
@@ -26,7 +28,9 @@ public class EqualValuesNumberInRowConstraint implements Constraint {
 
     @Override
     public boolean isSatisfiedWith(Assignment assignment) {
-        return Arrays.asList(variables).stream().filter( e -> ( e != null) && assignment.getAssignment(e).equals("0")).count() < variables.length / 2
-                && Arrays.asList(variables).stream().filter( e -> ( e != null) && assignment.getAssignment(e).equals("1")).count() < variables.length / 2;
+        long zerosNumber = Arrays.asList(variables).stream().filter( e -> ( assignment.getAssignment(e) != null) && assignment.getAssignment(e).equals("0")).count();
+        long onesNumber = Arrays.asList(variables).stream().filter( e -> ( assignment.getAssignment(e) != null) && assignment.getAssignment(e).equals("1")).count();
+        return zerosNumber <= variables.length / 2
+                && onesNumber <= variables.length / 2;
     }
 }

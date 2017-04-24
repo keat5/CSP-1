@@ -1,13 +1,10 @@
 package fr.emse.ai.csp.australia;
 
 
-import fr.emse.ai.csp.core.CSP;
-import fr.emse.ai.csp.core.Domain;
-import fr.emse.ai.csp.core.NotEqualConstraint;
-import fr.emse.ai.csp.core.Variable;
-import fr.emse.ai.csp.core.BacktrackingStrategy;
-import fr.emse.ai.csp.core.CSPStateListener;
-import fr.emse.ai.csp.core.Assignment;
+import fr.emse.ai.csp.core.*;
+
+import java.util.Arrays;
+
 /**
  * Artificial Intelligence A Modern Approach (3rd Ed.): Figure 6.1, Page 204.<br>
  * <br>
@@ -19,6 +16,8 @@ import fr.emse.ai.csp.core.Assignment;
  * @author Mike Stampone
  */
 public class MapCSP extends CSP {
+    int sizeBinary = 6;
+    Variable[][] tab = new Variable[sizeBinary][sizeBinary];
     public static final Variable NSW = new Variable("NSW");
     public static final Variable NT = new Variable("NT");
     public static final Variable Q = new Variable("Q");
@@ -35,14 +34,33 @@ public class MapCSP extends CSP {
      * Australia, with the colors Red, Green, and Blue.
      */
     public MapCSP() {
-        collectVariables();
-
-        Domain colors = new Domain(new Object[]{RED, GREEN, BLUE});
+        //collectVariables();
+        inicialize(tab);
+        Domain colors = new Domain(new String[]{"0", "1"});
 
         for (Variable var : getVariables())
             setDomain(var, colors);
+        for (int i = 0; i < sizeBinary; i++) {
+            for (int k = 0; k < sizeBinary - 2; k++) {
+                addConstraint(new ThreeInLineConstraint(tab[i][k], tab[i][k + 1], tab[i][k + 2]));
+            }
+        }
+        for (int i = 0; i < sizeBinary-2; i++) {
+            for (int k = 0; k < sizeBinary; k++) {
+                addConstraint(new ThreeInLineConstraint(tab[i][k], tab[i+1][k], tab[i+2][k]));
+            }
+        }
+        for (int i = 0; i < sizeBinary; i++) {
+            addConstraint(new EqualValuesNumberInColumnConstraint(tab, i));
+            addConstraint(new EqualValuesNumberInRowConstraint(tab, i));
+        }
 
-        addConstraint(new NotEqualConstraint(WA, NT));
+        for ( int i = 0; i < sizeBinary; i++ ) {
+            for ( int j = 0; j < sizeBinary; j++ ) {
+                addConstraint(new UniqeLineConstraint(tab, i, j));
+            }
+        }
+      /*  addConstraint(new NotEqualConstraint(WA, NT));
         addConstraint(new NotEqualConstraint(WA, SA));
         addConstraint(new NotEqualConstraint(NT, SA));
         addConstraint(new NotEqualConstraint(NT, Q));
@@ -51,15 +69,17 @@ public class MapCSP extends CSP {
         addConstraint(new NotEqualConstraint(SA, V));
         addConstraint(new NotEqualConstraint(Q, NSW));
         addConstraint(new NotEqualConstraint(NSW, V));
-    }
+        */
 
-    /**
-     * Returns the principle states and territories of Australia as a list of
-     * variables.
-     *
-     * @return the principle states and territories of Australia as a list of
-     * variables.
-     */
+
+        /**
+         * Returns the principle states and territories of Australia as a list of
+         * variables.
+         *
+         * @return the principle states and territories of Australia as a list of
+         * variables.
+         */
+    }
     private void collectVariables() {
         addVariable(NSW);
         addVariable(WA);
@@ -68,6 +88,21 @@ public class MapCSP extends CSP {
         addVariable(SA);
         addVariable(V);
         addVariable(T);
+
+    }
+
+    public void inicialize(Variable[][] tabVariable) {
+        int size = tabVariable.length;
+        for (int i = 0; i < size; i++) {
+            for (int k = 0; k < size; k++) {
+                Variable var = new Variable(i + "-" + k);
+                tabVariable[i][k] = var;
+                addVariable(var);
+            }
+
+        }
+        System.out.println(Arrays.deepToString(tabVariable));
+
     }
 
 }

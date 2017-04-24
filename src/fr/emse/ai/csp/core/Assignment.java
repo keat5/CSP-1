@@ -105,15 +105,21 @@ public class Assignment {
 
     @Override
     public String toString() {
+        int help=0;
         boolean comma = false;
-        StringBuffer result = new StringBuffer("{");
+        StringBuffer result = new StringBuffer("");
         for (Variable var : variables) {
+            help++;
             if (comma)
-                result.append(", ");
-            result.append(var + "=" + variableToValue.get(var));
+                result.append(" ");
+            result.append(variableToValue.get(var));
+            if(help==Math.sqrt(variables.size())){
+                help=0;
+                result.append("\n");
+            }
             comma = true;
         }
-        result.append("}");
+        result.append("");
         return result.toString();
     }
 }
