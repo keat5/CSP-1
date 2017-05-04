@@ -1,10 +1,14 @@
-package fr.emse.ai.csp.core;
+package fr.emse.ai.csp.p_graph;
+
+import fr.emse.ai.csp.core.Assignment;
+import fr.emse.ai.csp.core.Constraint;
+import fr.emse.ai.csp.core.Variable;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Represents a binary constraint which forbids equal values.
+ * Represents a p_binary constraint which forbids equal values.
  *
  * @author Ruediger Lunde
  */

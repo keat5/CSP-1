@@ -25,7 +25,7 @@ public class Domain implements Iterable<Object> {
             this.values[i] = values.get(i);
     }
 
-    public Domain(Object[] values) {
+    public Domain(int[] values) {
         this.values = new Object[values.length];
         for (int i = 0; i < values.length; i++)
             this.values[i] = values[i];

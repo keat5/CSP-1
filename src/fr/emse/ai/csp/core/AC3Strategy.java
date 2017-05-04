@@ -10,7 +10,7 @@ import fr.emse.ai.util.FIFOQueue;
  * <pre>
  * <code>
  * function AC-3(csp) returns false if an inconsistency is found and true otherwise
- *    inputs: csp, a binary CSP with components (X, D, C)
+ *    inputs: csp, a p_binary CSP with components (X, D, C)
  *    local variables: queue, a queue of arcs, initially all the arcs in csp
  *    while queue is not empty do
  *       (Xi, Xj) = REMOVE-FIRST(queue)
@@ -41,7 +41,7 @@ import fr.emse.ai.util.FIFOQueue;
 public class AC3Strategy {
 
 	/**
-	 * Makes a CSP consisting of binary constraints arc-consistent.
+	 * Makes a CSP consisting of p_binary constraints arc-consistent.
 	 * 
 	 * @return An object which indicates success/failure and contains data to
 	 *         undo the operation.
@@ -63,7 +63,7 @@ public class AC3Strategy {
 	 * @return An object which indicates success/failure and contains data to
 	 *         undo the operation.
 	 */
-	public DomainRestoreInfo reduceDomains(Variable var, Object value, CSP csp) {
+	public DomainRestoreInfo reduceDomains(Variable var, int value, CSP csp) {
 		DomainRestoreInfo result = new DomainRestoreInfo();
 		Domain domain = csp.getDomain(var);
 		if (domain.contains(value)) {
@@ -71,7 +71,7 @@ public class AC3Strategy {
 				FIFOQueue<Variable> queue = new FIFOQueue<Variable>();
 				queue.add(var);
 				result.storeDomainFor(var, domain);
-				csp.setDomain(var, new Domain(new Object[] { value }));
+				csp.setDomain(var, new Domain(new int[] { value }));
 				reduceDomains(queue, csp, result);
 			}
 		} else {

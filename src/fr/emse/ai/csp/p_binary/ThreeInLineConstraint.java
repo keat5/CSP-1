@@ -1,4 +1,8 @@
-package fr.emse.ai.csp.core;
+package fr.emse.ai.csp.p_binary;
+
+        import fr.emse.ai.csp.core.Assignment;
+        import fr.emse.ai.csp.core.Constraint;
+        import fr.emse.ai.csp.core.Variable;
 
         import java.util.ArrayList;
         import java.util.List;
@@ -6,7 +10,7 @@ package fr.emse.ai.csp.core;
 /**
  * Created by Klak on 2017-04-24.
  */
-public class ThreeInLineConstraint implements Constraint{
+public class ThreeInLineConstraint implements Constraint {
     private Variable var1;
     private Variable var2;
     private Variable var3;
@@ -35,6 +39,6 @@ public class ThreeInLineConstraint implements Constraint{
         Object value3 = assignment.getAssignment(var3);
 
 
-        return value1==null||value2==null||value3==null||!(value1.equals(value2)&&value2.equals(value3));
+        return value1==null||value2==null||value3==null||!(value1 == value2 &&value2 == value3);
     }
 }

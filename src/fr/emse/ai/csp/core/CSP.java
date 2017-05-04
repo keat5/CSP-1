@@ -113,9 +113,9 @@ public class CSP {
     }
 
     /**
-     * Returns for binary constraints the other variable from the scope.
+     * Returns for p_binary constraints the other variable from the scope.
      *
-     * @return a variable or null for non-binary constraints.
+     * @return a variable or null for non-p_binary constraints.
      */
     public Variable getNeighbor(Variable var, Constraint constraint) {
         List<Variable> scope = constraint.getScope();

@@ -1,4 +1,4 @@
-package fr.emse.ai.csp.australia;
+package fr.emse.ai.csp.p_binary;
 
 
 import fr.emse.ai.csp.core.*;
@@ -15,10 +15,10 @@ import java.util.Arrays;
  * @author Ruediger Lunde
  * @author Mike Stampone
  */
-public class MapCSP extends CSP {
-    int sizeBinary = 10;
+public class BinaryCSP extends CSP {
+    int sizeBinary = 12;
     Variable[][] tab = new Variable[sizeBinary][sizeBinary];
-    public static final Variable NSW = new Variable("NSW");
+    /*public static final Variable NSW = new Variable("NSW");
     public static final Variable NT = new Variable("NT");
     public static final Variable Q = new Variable("Q");
     public static final Variable SA = new Variable("SA");
@@ -28,15 +28,16 @@ public class MapCSP extends CSP {
     public static final String RED = "RED";
     public static final String GREEN = "GREEN";
     public static final String BLUE = "BLUE";
-
+*/
     /**
      * Constructs a map CSP for the principal states and territories of
      * Australia, with the colors Red, Green, and Blue.
      */
-    public MapCSP() {
-        //collectVariables();
+    public BinaryCSP() {
         inicialize(tab);
-        Domain colors = new Domain(new String[]{"0", "1"});
+        Domain colors = new Domain(new int[]{0, 1});
+
+
 
         for (Variable var : getVariables())
             setDomain(var, colors);
@@ -80,7 +81,7 @@ public class MapCSP extends CSP {
          * variables.
          */
     }
-    private void collectVariables() {
+    /*private void collectVariables() {
         addVariable(NSW);
         addVariable(WA);
         addVariable(NT);
@@ -89,7 +90,7 @@ public class MapCSP extends CSP {
         addVariable(V);
         addVariable(T);
 
-    }
+    }*/
 
     public void inicialize(Variable[][] tabVariable) {
         int size = tabVariable.length;
