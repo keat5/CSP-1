@@ -107,7 +107,7 @@ public class Assignment {
     public String toString() {
         int help=0;
         boolean comma = false;
-        StringBuffer result = new StringBuffer(" ");
+        StringBuffer result = new StringBuffer("\n ");
         for (Variable var : variables) {
             help++;
             if (comma)

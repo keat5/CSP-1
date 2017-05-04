@@ -21,7 +21,7 @@ import java.util.List;
  * @author Mike Stampone
  */
 public class GraphCSP extends CSP {
-    int graphSize = 2;
+    int graphSize = 10;
     Variable[][] graph = new Variable[graphSize][graphSize];
 
     public GraphCSP() {
@@ -48,26 +48,6 @@ public class GraphCSP extends CSP {
             }
         }
 
-        /*for (int i = 0; i < graphSize; i++) {
-            for (int k = 0; k < graphSize - 2; k++) {
-                addConstraint(new ThreeInLineConstraint(graph[i][k], graph[i][k + 1], graph[i][k + 2]));
-            }
-        }
-        for (int i = 0; i < graphSize -2; i++) {
-            for (int k = 0; k < graphSize; k++) {
-                addConstraint(new ThreeInLineConstraint(graph[i][k], graph[i+1][k], graph[i+2][k]));
-            }
-        }
-        for (int i = 0; i < graphSize; i++) {
-            addConstraint(new EqualValuesNumberInColumnConstraint(graph, i));
-            addConstraint(new EqualValuesNumberInRowConstraint(graph, i));
-        }
-
-        for (int i = 0; i < graphSize; i++ ) {
-            for (int j = 0; j < graphSize; j++ ) {
-                addConstraint(new UniqeLineConstraint(graph, i, j));
-            }
-        }*/
     }
 
     public void inicialize(Variable[][] tabVariable) {
